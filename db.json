@@ -1,16 +1,51 @@
 {
-  "posts":[
+  "users": [
     {
-      "id" : 0,
-      "title": "First post!",
-      "content" : "My first content!"
+      "email": "test2@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "email": "test3@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "email": "test4@gmail.com",
+      "password": "$2a$10$BN.gfkcJutJsHj1pbruQ..B6mAy93SC6meQGfoqU/gRQCBiB0uqwe",
+      "id": 3
+    },
+    {
+      "email": "test5@gmail.com",
+      "password": "$2a$10$eIx1Yh00D33NWEV1qhko/uyHfwZYRt9BWlT9PQmXWiulUQ6ORb5UO",
+      "id": 4
     }
   ],
-  "comments" : [
+  "posts": [
     {
-      "id": 0,
-      "content": "Wow such content!",
-      "username": "zero_cool"
+      "content": "CONTENT",
+      "title": "TITLE",
+      "id": 1
+    },
+    {
+      "cartItemCount": 9,
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "cartItemCount": 9,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "cartItemCount": 9,
+      "id": 4
+    }
+  ],
+  "items": [
+    {
+      "userId": 3,
+      "cartItemCount": 5
     }
   ]
 }
