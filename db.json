@@ -47,5 +47,15 @@
       "userId": 3,
       "cartItemCount": 5
     }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "userId": 1,
+      "price": 1,
+      "image": "",
+      "title": "test",
+      "info": "test"
+    }
   ]
 }

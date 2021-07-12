@@ -11,6 +11,7 @@ server.db = router.db;
 const rules = auth.rewriter({
     users: 400,
     items: 600,
+    products: 664,
 })
 
 server.use(rules);
