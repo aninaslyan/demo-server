@@ -1,60 +1,60 @@
 {
   "users": [
     {
-      "email": "test2@gmail.com",
-      "password": "123456",
-      "id": 1
-    },
-    {
-      "email": "test3@gmail.com",
-      "password": "123456",
-      "id": 2
-    },
-    {
-      "email": "test4@gmail.com",
-      "password": "$2a$10$BN.gfkcJutJsHj1pbruQ..B6mAy93SC6meQGfoqU/gRQCBiB0uqwe",
-      "id": 3
-    },
-    {
-      "email": "test5@gmail.com",
-      "password": "$2a$10$eIx1Yh00D33NWEV1qhko/uyHfwZYRt9BWlT9PQmXWiulUQ6ORb5UO",
-      "id": 4
-    },
-    {
-      "id": 5,
-      "email": "test8@gmail.com",
-      "password": "$2b$10$GPue37I6njyP/EOy6q3iVuBmGdkBrfmKwQ/hJtaXcuWHl63BVak3.",
+      "id": 1,
+      "email": "test999999@gmail.com",
+      "password": "$2b$10$QbTVZJGz5f3KOA2JR8hyQ.7DqJQCH9F1HSuNGFgSgEVKMTO4aFyge",
+      "name": "",
       "isAdmin": false
     },
     {
+      "id": 2,
+      "email": "test@gmail.com",
+      "password": "$2b$10$BvoDbJ0OgfLL0nQGevoSK.LTQQQLNG/ubW2oVQDYu7Skre2E050wW",
+      "name": "",
+      "isAdmin": false
+    },
+    {
+      "id": 3,
+      "email": "test1@gmail.com",
+      "password": "$2b$10$mWAZRbjtVNiBjIvEduDL0uitGVNt6KStRvaUN51k7xfAVGb.Swtf2",
+      "name": "ani",
+      "isAdmin": true
+    },
+    {
+      "id": 4,
+      "email": "test3@gmail.com",
+      "password": "$2b$10$HkX/d0eSMbM6o411N0ch2OrMAZhCTKzXj/NUShTu0/zzP88hVdLZa",
+      "name": "ani",
+      "isAdmin": true
+    },
+    {
+      "id": 5,
+      "email": "test5@gmail.com",
+      "password": "$2b$10$0MPeI40zaZmHpPLFAb1UPed7thBbxTZdir3h2kladXUc1PjIWRlM2",
+      "name": "ani",
+      "isAdmin": true
+    },
+    {
       "id": 6,
-      "email": "test9@gmail.com",
-      "password": "$2b$10$D74EjnzBVxGXerbtWn1e9uCIqCh63mSlD0v64G34qkl5Cw73QE3Bq",
+      "email": "test6@gmail.com",
+      "password": "$2b$10$zLtoegoTRoE7JH4zDD34bemyvC5HJsu6UEM49Br2EdUs4nTuFpnXu",
+      "name": "ani",
       "isAdmin": true
     },
     {
       "id": 7,
-      "email": "test888@gmail.com",
-      "password": "$2b$10$EhsKOyJgo0rxdHGSBi8E/.9ttD2NUNriyvJEcpeYjXCJ.3wP3hA/G",
-      "isAdmin": false
+      "email": "test7@gmail.com",
+      "password": "$2b$10$nPwZSbNkqbMnUyvbXgwcr.IB2xwaZMYatlg9p.EGH7aGCU15n/B2m",
+      "name": "ani",
+      "isAdmin": true
     },
     {
-      "email": "test8888@gmail.com",
-      "password": "$2a$10$s6SvSwQ/.gCMDyLKOtKWCuO0qcXbVlWtqBbjok4eYVskGyExnzgZy",
-      "isAdmin": false,
-      "id": 8
-    },
-    {
-      "email": "test88888@gmail.com",
-      "password": "$2a$10$VrB8i.Tc7dQbgkNZDrm0se2iJ8mypCL6hRl/cIMWgwzculmhU9LDa",
-      "isAdmin": false,
-      "id": 9
-    },
-    {
-      "id": 10,
-      "email": "test888888@gmail.com",
-      "password": "$2b$10$ogJoMkMJTFd36JZFGOoQHOb/EUIV3d5c.Kl6IEfW/g02iaxtFSkFe",
-      "isAdmin": false
+      "id": 8,
+      "email": "test8@gmail.com",
+      "password": "$2b$10$eGiyXIid50mg3EFxH4eI..8dGgccO3rTaRqvDewgdF1wzXScqoDTe",
+      "name": "ani",
+      "isAdmin": true
     }
   ],
   "posts": [

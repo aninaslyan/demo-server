@@ -1,10 +1,9 @@
 import bcrypt from "bcrypt";
 import fs from "fs";
 import express from "express";
-import jwt from "jsonwebtoken";
 
-import { findUserByEmail } from "../utils";
-import { fileOption, expiresIn, secret_key } from "../constants";
+import { findUserByEmail, generateToken } from "../utils";
+import { fileOption } from "../constants";
 
 const router = express.Router();
 const db = JSON.parse(fs.readFileSync('./db.json', fileOption));
@@ -33,18 +32,9 @@ router.post('/signin', (req, res) => {
         });
       }
       if (result) {
-        const token = jwt.sign(
-          {
-            email: user.email,
-            id: user.id
-          },
-          secret_key,
-          {
-            expiresIn: expiresIn
-          }
-        );
+        const token = generateToken(user.email, user.id, user.isAdmin, user.name);
+
         return res.status(200).json({
-          message: "Auth successful",
           token,
           user,
         });
@@ -61,7 +51,7 @@ router.post('/signin', (req, res) => {
 });
 
 router.post("/signup", (req, res) => {
-  const { email, password, isAdmin = false } = req.body;
+  const { email, password, name = '', isAdmin = false } = req.body;
   if (!email || !password) {
     return res.status(400).json({
       message: "Email and password are required"
@@ -85,6 +75,7 @@ router.post("/signup", (req, res) => {
           id: db.users.length + 1,
           email,
           password: hashedPass,
+          name,
           isAdmin,
         };
 
@@ -98,7 +89,6 @@ router.post("/signup", (req, res) => {
             });
           } else {
             res.status(201).json({
-              message: "User created",
               user: newUser,
             });
           }
