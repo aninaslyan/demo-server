@@ -18,36 +18,30 @@ router.post('/signin', (req, res) => {
 
   const user = findUserByEmail(email);
 
-  if (user) {
-    if (user.length < 1) {
-      return res.status(401).json({
-        message: "Auth failed"
-      });
-    }
-
-    bcrypt.compare(password, user.password, (err, result) => {
-      if (err) {
-        return res.status(401).json({
-          message: "Auth failed"
-        });
-      }
-      if (result) {
-        const token = generateToken(user.email, user.id, user.isAdmin, user.name);
-
-        return res.status(200).json({
-          token,
-          user,
-        });
-      }
-      res.status(401).json({
-        message: "Auth failed"
-      });
-    });
-  } else {
-    res.status(500).json({
-      error: "User not found"
+  if (!user) {
+    return res.status(404).json({
+      error: "Invalid Credentials"
     });
   }
+
+  bcrypt.compare(password, user.password, (err, result) => {
+    if (err) {
+      return res.status(401).json({
+        message: "Authentication failed"
+      });
+    }
+    if (result) {
+      const token = generateToken(user.email, user.id, user.isAdmin, user.name);
+
+      return res.status(200).json({
+        token,
+        user,
+      });
+    }
+    res.status(401).json({
+      message: "Authentication failed"
+    });
+  });
 });
 
 router.post("/signup", (req, res) => {

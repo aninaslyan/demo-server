@@ -55,6 +55,32 @@
       "password": "$2b$10$eGiyXIid50mg3EFxH4eI..8dGgccO3rTaRqvDewgdF1wzXScqoDTe",
       "name": "ani",
       "isAdmin": true
+    },
+    {
+      "id": 9,
+      "email": "test9@gmail.com",
+      "password": "$2b$10$zxO2qEengQXUE8/LWSt40O9rV/QKUEt2KyCzkerRGuyYl9bdud2q.",
+      "name": "test",
+      "isAdmin": false
+    },
+    {
+      "email": "test10@gmail.com",
+      "password": "$2a$10$CXORPpSLZRysQmLpmD9f1eqe6OH8wVQzzR3Y87SnjHRTjvKuPbgRq",
+      "name": "test",
+      "id": 10
+    },
+    {
+      "email": "test11@gmail.com",
+      "password": "$2a$10$6aib3kxJh10js.JzJjhil.79FqB70L3Pcj/Sd0RUFPvows8qr8nLq",
+      "name": "test",
+      "id": 11
+    },
+    {
+      "id": 12,
+      "email": "test44@gmail.com",
+      "password": "$2b$10$/l5fxKBCYBG5fKzYm1nMa.lRh78hj5lUg9Is.Ovu2ll2/9dDkNiNa",
+      "name": "",
+      "isAdmin": false
     }
   ],
   "posts": [
